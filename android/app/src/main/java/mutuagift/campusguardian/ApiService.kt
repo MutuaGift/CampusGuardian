@@ -4,6 +4,8 @@ import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
+import retrofit2.http.PUT
+import retrofit2.http.Path
 
 interface ApiService {
     // 1. Health Check (Existing)
@@ -17,4 +19,8 @@ interface ApiService {
     // 3. Driver View: Get all open rides
     @GET("/active-rides")
     fun getOpenRides(): Call<List<Ride>>
+    // 4. Accept a Ride (UPDATE)
+    // We reuse 'BackendResponse' because we just expect a status/message back.
+    @PUT("/accept-ride/{id}")
+    fun acceptRide(@Path("id") rideId: String): Call<BackendResponse>
 }
