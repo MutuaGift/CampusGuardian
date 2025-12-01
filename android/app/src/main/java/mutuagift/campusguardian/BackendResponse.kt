@@ -1,9 +1,6 @@
 package com.mutuagift.campusguardian
 
-import android.R
-
 data class BackendResponse(
-    val status : R.string,
-    val message : R.string
-
+    val status: String,  // <--- Ensure this says "String" (Capital S)
+    val message: String
 )

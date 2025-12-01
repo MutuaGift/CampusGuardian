@@ -1,4 +1,7 @@
-package mutuagift.campusguardian
+package com.mutuagift.campusguardian
 
-class RideResponse {
-}
+data class RideResponse(
+    val status: String,
+    val ride_id: String,
+    val message: String
+)
