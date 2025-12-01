@@ -37,5 +37,15 @@ fun HomeScreen(navController: NavController) {
         ) {
             Text("I AM A DRIVER")
         }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        // --- NEW BUTTON 3: Go to Map ---
+        Button(
+            onClick = { navController.navigate("map_screen") },
+            modifier = Modifier.fillMaxWidth(0.8f)
+        ) {
+            Text("VIEW CAMPUS MAP")
+        }
     }
 }

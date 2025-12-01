@@ -1,4 +1,13 @@
-plugins {
+import java.util.Properties
+import java.io.FileInputStream
+
+// 1. Load the Secret File
+val secrets = Properties()
+val secretFile = rootProject.file("local.properties")
+if (secretFile.exists()) {
+    secrets.load(FileInputStream(secretFile))
+}
+ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
@@ -16,6 +25,8 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders["MAPS_API_KEY"] = secrets.getProperty("MAPS_API_KEY") ?: ""
+
     }
 
     buildTypes {
@@ -59,4 +70,6 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("androidx.navigation:navigation-compose:2.8.3")
+    implementation("com.google.maps.android:maps-compose:4.4.1")
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
 }

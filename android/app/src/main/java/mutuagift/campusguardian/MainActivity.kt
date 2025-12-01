@@ -11,26 +11,30 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            // 1. Create the Controller (The Brain of Navigation)
+            // 1. Create the Controller
             val navController = rememberNavController()
 
-            // 2. Setup the Map (NavHost)
-            // startDestination = The screen to show first
+            // 2. Setup the Navigation Host
             NavHost(navController = navController, startDestination = "home_screen") {
 
-                // Route A: The Menu
+                // Route A: Menu
                 composable("home_screen") {
                     HomeScreen(navController)
                 }
 
-                // Route B: The Passenger Form
+                // Route B: Passenger Form
                 composable("passenger_screen") {
                     RideRequestScreen()
                 }
 
-                // Route C: The Driver Dashboard
+                // Route C: Driver Dashboard
                 composable("driver_screen") {
                     DriverDashboard()
+                }
+
+                // Route D: Map Screen
+                composable("map_screen") {
+                    MapScreen()
                 }
             }
         }
