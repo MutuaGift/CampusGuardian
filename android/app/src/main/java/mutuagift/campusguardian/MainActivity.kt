@@ -1,11 +1,15 @@
 package com.mutuagift.campusguardian
 
+// Import your UI screens from the 'ui' package
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.mutuagift.campusguardian.ui.EditProfileScreen
+import com.mutuagift.campusguardian.ui.HomeScreen
+import com.mutuagift.campusguardian.ui.ProfileScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +39,16 @@ class MainActivity : ComponentActivity() {
                 // Route D: Map Screen
                 composable("map_screen") {
                     MapScreen()
+                }
+
+                // Route E: Profile (FIXED)
+                composable("profile_screen") {
+                    ProfileScreen(navController)
+                }
+
+                // Route F: Edit Profile
+                composable("edit_profile_screen") {
+                    EditProfileScreen(navController)
                 }
             }
         }

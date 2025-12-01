@@ -1,5 +1,9 @@
-package com.mutuagift.campusguardian
+package mutuagift.campusguardian.network
 
+import com.mutuagift.campusguardian.BackendResponse
+import com.mutuagift.campusguardian.Ride
+import com.mutuagift.campusguardian.RideRequest
+import com.mutuagift.campusguardian.RideResponse
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET

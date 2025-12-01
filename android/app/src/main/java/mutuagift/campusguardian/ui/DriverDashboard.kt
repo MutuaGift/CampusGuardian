@@ -1,7 +1,6 @@
 package com.mutuagift.campusguardian
 
 import android.widget.Toast
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -16,6 +15,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import mutuagift.campusguardian.network.ApiService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
