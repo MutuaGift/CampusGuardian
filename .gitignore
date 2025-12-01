@@ -1,0 +1,10 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Android (We will need these soon)
+.gradle/
+build/
+local.properties
+.idea/
