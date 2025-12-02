@@ -4,6 +4,23 @@
             "outputFile": "com.mutuagift.campusguardian.app-mergeDebugResources-46:/values-lv/values-lv.xml",
             "map": [
                 {
+                    "source": "/home/gift/.gradle/caches/8.13/transforms/d4f1df45f580e7440d024cb8f0979e04/transformed/play-services-base-18.1.0/res/values-lv/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,296,453,582,686,824,951,1064,1166,1337,1442,1607,1738,1903,2054,2114,2178",
+                        "endColumns": "102,156,128,103,137,126,112,101,170,104,164,130,164,150,59,63,84",
+                        "endOffsets": "295,452,581,685,823,950,1063,1165,1336,1441,1606,1737,1902,2053,2113,2177,2262"
+                    },
+                    "to": {
+                        "startLines": "12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1110,1217,1378,1511,1619,1761,1892,2009,2281,2456,2565,2734,2869,3038,3193,3257,3325",
+                        "endColumns": "106,160,132,107,141,130,116,105,174,108,168,134,168,154,63,67,88",
+                        "endOffsets": "1212,1373,1506,1614,1756,1887,2004,2110,2451,2560,2729,2864,3033,3188,3252,3320,3409"
+                    }
+                },
+                {
                     "source": "/home/gift/.gradle/caches/8.13/transforms/bde4c93c54d086152884c8c5026d79de/transformed/foundation-release/res/values-lv/values-lv.xml",
                     "from": {
                         "startLines": "2,3,4",
@@ -21,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/gift/.gradle/caches/8.13/transforms/3faa8a4fe05e8479ea35e5f097172c44/transformed/play-services-base-18.0.1/res/values-lv/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,296,453,582,686,824,951,1064,1166,1337,1442,1607,1738,1903,2054,2114,2178",
-                        "endColumns": "102,156,128,103,137,126,112,101,170,104,164,130,164,150,59,63,84",
-                        "endOffsets": "295,452,581,685,823,950,1063,1165,1336,1441,1606,1737,1902,2053,2113,2177,2262"
-                    },
-                    "to": {
-                        "startLines": "12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1110,1217,1378,1511,1619,1761,1892,2009,2281,2456,2565,2734,2869,3038,3193,3257,3325",
-                        "endColumns": "106,160,132,107,141,130,116,105,174,108,168,134,168,154,63,67,88",
-                        "endOffsets": "1212,1373,1506,1614,1756,1887,2004,2110,2451,2560,2729,2864,3033,3188,3252,3320,3409"
-                    }
-                },
-                {
-                    "source": "/home/gift/.gradle/caches/8.13/transforms/f88cd3bdd03b27601d1a4b079abde7f5/transformed/play-services-basement-18.0.0/res/values-lv/values.xml",
+                    "source": "/home/gift/.gradle/caches/8.13/transforms/c2c5e49fdd51b74259e8235ecd54f8c3/transformed/play-services-basement-18.1.0/res/values-lv/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

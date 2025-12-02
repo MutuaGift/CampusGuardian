@@ -4,20 +4,20 @@
             "outputFile": "com.mutuagift.campusguardian.app-mergeDebugResources-46:/values-be/values-be.xml",
             "map": [
                 {
-                    "source": "/home/gift/.gradle/caches/8.13/transforms/f88cd3bdd03b27601d1a4b079abde7f5/transformed/play-services-basement-18.0.0/res/values-be/values.xml",
+                    "source": "/home/gift/.gradle/caches/8.13/transforms/d4f1df45f580e7440d024cb8f0979e04/transformed/play-services-base-18.1.0/res/values-be/values.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "141",
-                        "endOffsets": "336"
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,296,454,575,681,832,954,1065,1165,1323,1426,1585,1709,1858,2013,2078,2136",
+                        "endColumns": "102,157,120,105,150,121,110,99,157,102,158,123,148,154,64,57,74",
+                        "endOffsets": "295,453,574,680,831,953,1064,1164,1322,1425,1584,1708,1857,2012,2077,2135,2210"
                     },
                     "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2098",
-                        "endColumns": "145",
-                        "endOffsets": "2239"
+                        "startLines": "12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1094,1201,1363,1488,1598,1753,1879,1994,2244,2406,2513,2676,2804,2957,3116,3185,3247",
+                        "endColumns": "106,161,124,109,154,125,114,103,161,106,162,127,152,158,68,61,78",
+                        "endOffsets": "1196,1358,1483,1593,1748,1874,1989,2093,2401,2508,2671,2799,2952,3111,3180,3242,3321"
                     }
                 },
                 {
@@ -89,20 +89,20 @@
                     }
                 },
                 {
-                    "source": "/home/gift/.gradle/caches/8.13/transforms/3faa8a4fe05e8479ea35e5f097172c44/transformed/play-services-base-18.0.1/res/values-be/values.xml",
+                    "source": "/home/gift/.gradle/caches/8.13/transforms/c2c5e49fdd51b74259e8235ecd54f8c3/transformed/play-services-basement-18.1.0/res/values-be/values.xml",
                     "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,296,454,575,681,832,954,1065,1165,1323,1426,1585,1709,1858,2013,2078,2136",
-                        "endColumns": "102,157,120,105,150,121,110,99,157,102,158,123,148,154,64,57,74",
-                        "endOffsets": "295,453,574,680,831,953,1064,1164,1322,1425,1584,1708,1857,2012,2077,2135,2210"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "141",
+                        "endOffsets": "336"
                     },
                     "to": {
-                        "startLines": "12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1094,1201,1363,1488,1598,1753,1879,1994,2244,2406,2513,2676,2804,2957,3116,3185,3247",
-                        "endColumns": "106,161,124,109,154,125,114,103,161,106,162,127,152,158,68,61,78",
-                        "endOffsets": "1196,1358,1483,1593,1748,1874,1989,2093,2401,2508,2671,2799,2952,3111,3180,3242,3321"
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2098",
+                        "endColumns": "145",
+                        "endOffsets": "2239"
                     }
                 }
             ]

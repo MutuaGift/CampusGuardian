@@ -4,24 +4,7 @@
             "outputFile": "com.mutuagift.campusguardian.app-mergeDebugResources-46:/values-ko/values-ko.xml",
             "map": [
                 {
-                    "source": "/home/gift/.gradle/caches/8.13/transforms/e4d9df7ebe2f42b882fdf9fd4156e219/transformed/core-1.17.0/res/values-ko/values-ko.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,147,247,341,438,534,632,732",
-                        "endColumns": "91,99,93,96,95,97,99,100",
-                        "endOffsets": "142,242,336,433,529,627,727,828"
-                    },
-                    "to": {
-                        "startLines": "3,4,5,6,7,8,9,101",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "177,269,369,463,560,656,754,9691",
-                        "endColumns": "91,99,93,96,95,97,99,100",
-                        "endOffsets": "264,364,458,555,651,749,849,9787"
-                    }
-                },
-                {
-                    "source": "/home/gift/.gradle/caches/8.13/transforms/f88cd3bdd03b27601d1a4b079abde7f5/transformed/play-services-basement-18.0.0/res/values-ko/values.xml",
+                    "source": "/home/gift/.gradle/caches/8.13/transforms/c2c5e49fdd51b74259e8235ecd54f8c3/transformed/play-services-basement-18.1.0/res/values-ko/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/gift/.gradle/caches/8.13/transforms/3faa8a4fe05e8479ea35e5f097172c44/transformed/play-services-base-18.0.1/res/values-ko/values.xml",
+                    "source": "/home/gift/.gradle/caches/8.13/transforms/d4f1df45f580e7440d024cb8f0979e04/transformed/play-services-base-18.1.0/res/values-ko/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -52,6 +35,23 @@
                         "startOffsets": "1009,1113,1252,1368,1470,1585,1702,1809,2025,2170,2273,2409,2527,2645,2764,2823,2881",
                         "endColumns": "103,138,115,101,114,116,106,94,144,102,135,117,117,118,58,57,74",
                         "endOffsets": "1108,1247,1363,1465,1580,1697,1804,1899,2165,2268,2404,2522,2640,2759,2818,2876,2951"
+                    }
+                },
+                {
+                    "source": "/home/gift/.gradle/caches/8.13/transforms/e4d9df7ebe2f42b882fdf9fd4156e219/transformed/core-1.17.0/res/values-ko/values-ko.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,147,247,341,438,534,632,732",
+                        "endColumns": "91,99,93,96,95,97,99,100",
+                        "endOffsets": "142,242,336,433,529,627,727,828"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,101",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "177,269,369,463,560,656,754,9691",
+                        "endColumns": "91,99,93,96,95,97,99,100",
+                        "endOffsets": "264,364,458,555,651,749,849,9787"
                     }
                 },
                 {

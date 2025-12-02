@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 meta-data#com.google.android.geo.API_KEY
-INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:19:9-21:47
+INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:22:9-24:47
 	android:value
 		INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:21:13-44
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:24:13-44
 	android:name
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:20:13-58
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:23:13-58
 manifest
-ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:2:1-35:12
+ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:2:1-38:12
 MERGED from [androidx.navigation:navigation-common:2.8.3] /home/gift/.gradle/caches/8.13/transforms/29f9030f98c84ecda7cfa622e81f1060/transformed/navigation-common-2.8.3/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.8.3] /home/gift/.gradle/caches/8.13/transforms/a03a216a14c1df91a7e58ed3710fe1f9/transformed/navigation-runtime-2.8.3/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.8.3] /home/gift/.gradle/caches/8.13/transforms/b76ab2d6c7d00c57054655b6de3fd623/transformed/navigation-common-ktx-2.8.3/AndroidManifest.xml:2:1-7:12
@@ -25,9 +25,10 @@ MERGED from [io.coil-kt:coil-compose-base:2.4.0] /home/gift/.gradle/caches/8.13/
 MERGED from [com.google.accompanist:accompanist-drawablepainter:0.30.1] /home/gift/.gradle/caches/8.13/transforms/88364b716caa20714acf6fbafce81096/transformed/accompanist-drawablepainter-0.30.1/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.maps.android:maps-ktx:5.0.0] /home/gift/.gradle/caches/8.13/transforms/70961601fac588f0e440002dd618d456/transformed/maps-ktx-5.0.0/AndroidManifest.xml:18:1-23:12
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /home/gift/.gradle/caches/8.13/transforms/33ca194ff0aeebc70d88675e8b76c378/transformed/play-services-maps-18.2.0/AndroidManifest.xml:17:1-44:12
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/gift/.gradle/caches/8.13/transforms/3faa8a4fe05e8479ea35e5f097172c44/transformed/play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
-MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /home/gift/.gradle/caches/8.13/transforms/d31398898a935a24fcc020118c523a08/transformed/play-services-tasks-18.0.1/AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement:18.0.0] /home/gift/.gradle/caches/8.13/transforms/f88cd3bdd03b27601d1a4b079abde7f5/transformed/play-services-basement-18.0.0/AndroidManifest.xml:16:1-26:12
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /home/gift/.gradle/caches/8.13/transforms/0361f19a4b3f0c2086c621e372463a55/transformed/play-services-location-21.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/gift/.gradle/caches/8.13/transforms/d4f1df45f580e7440d024cb8f0979e04/transformed/play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/gift/.gradle/caches/8.13/transforms/4220548ef6d76c0bda89335cca0cc530/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/gift/.gradle/caches/8.13/transforms/c2c5e49fdd51b74259e8235ecd54f8c3/transformed/play-services-basement-18.1.0/AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.0.0] /home/gift/.gradle/caches/8.13/transforms/c53221d0fc2e3528c75f41663571319a/transformed/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/gift/.gradle/caches/8.13/transforms/54a1fd5e7343760f14196e76c585374d/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/gift/.gradle/caches/8.13/transforms/812bc1a6828842938c305c6b93f53adf/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -118,17 +119,27 @@ MERGED from [com.google.android.gms:play-services-maps:18.2.0] /home/gift/.gradl
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /home/gift/.gradle/caches/8.13/transforms/33ca194ff0aeebc70d88675e8b76c378/transformed/play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:8:22-78
 application
-ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:7:5-33:19
-INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:7:5-33:19
+ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:10:5-36:19
+INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:10:5-36:19
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /home/gift/.gradle/caches/8.13/transforms/33ca194ff0aeebc70d88675e8b76c378/transformed/play-services-maps-18.2.0/AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /home/gift/.gradle/caches/8.13/transforms/33ca194ff0aeebc70d88675e8b76c378/transformed/play-services-maps-18.2.0/AndroidManifest.xml:36:5-42:19
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/gift/.gradle/caches/8.13/transforms/3faa8a4fe05e8479ea35e5f097172c44/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/gift/.gradle/caches/8.13/transforms/3faa8a4fe05e8479ea35e5f097172c44/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /home/gift/.gradle/caches/8.13/transforms/d31398898a935a24fcc020118c523a08/transformed/play-services-tasks-18.0.1/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /home/gift/.gradle/caches/8.13/transforms/d31398898a935a24fcc020118c523a08/transformed/play-services-tasks-18.0.1/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:18.0.0] /home/gift/.gradle/caches/8.13/transforms/f88cd3bdd03b27601d1a4b079abde7f5/transformed/play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.google.android.gms:play-services-basement:18.0.0] /home/gift/.gradle/caches/8.13/transforms/f88cd3bdd03b27601d1a4b079abde7f5/transformed/play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /home/gift/.gradle/caches/8.13/transforms/0361f19a4b3f0c2086c621e372463a55/transformed/play-services-location-21.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /home/gift/.gradle/caches/8.13/transforms/0361f19a4b3f0c2086c621e372463a55/transformed/play-services-location-21.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/gift/.gradle/caches/8.13/transforms/d4f1df45f580e7440d024cb8f0979e04/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/gift/.gradle/caches/8.13/transforms/d4f1df45f580e7440d024cb8f0979e04/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/gift/.gradle/caches/8.13/transforms/4220548ef6d76c0bda89335cca0cc530/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/gift/.gradle/caches/8.13/transforms/4220548ef6d76c0bda89335cca0cc530/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/gift/.gradle/caches/8.13/transforms/c2c5e49fdd51b74259e8235ecd54f8c3/transformed/play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/gift/.gradle/caches/8.13/transforms/c2c5e49fdd51b74259e8235ecd54f8c3/transformed/play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.2] /home/gift/.gradle/caches/8.13/transforms/60ac01ccd0fc99b367bb1c2b0776ab4a/transformed/ui-tooling/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.2] /home/gift/.gradle/caches/8.13/transforms/60ac01ccd0fc99b367bb1c2b0776ab4a/transformed/ui-tooling/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.9.2] /home/gift/.gradle/caches/8.13/transforms/425637515fec80563a9228ede0c63bc6/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:22:5-27:19
@@ -150,45 +161,45 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/gift/
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.17.0] /home/gift/.gradle/caches/8.13/transforms/e4d9df7ebe2f42b882fdf9fd4156e219/transformed/core-1.17.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:19:9-35
 	android:label
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:14:9-41
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:17:9-41
 	android:fullBackupContent
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:12:9-54
-	android:roundIcon
 		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:15:9-54
+	android:roundIcon
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:18:9-54
 	android:icon
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:13:9-43
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:16:9-43
 	android:allowBackup
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:17:9-52
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:20:9-52
 	android:networkSecurityConfig
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:8:9-69
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:11:9-69
 	android:dataExtractionRules
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:11:9-65
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:14:9-65
 	android:usesCleartextTraffic
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:9:9-44
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:12:9-44
 activity#com.mutuagift.campusguardian.MainActivity
-ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:23:9-32:20
+ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:26:9-35:20
 	android:label
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:26:13-45
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:29:13-45
 	android:exported
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:25:13-36
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:28:13-36
 	android:theme
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:27:13-56
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:30:13-56
 	android:name
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:24:13-41
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:27:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:28:13-31:29
+ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:31:13-34:29
 action#android.intent.action.MAIN
-ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:29:17-69
+ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:29:25-66
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:30:17-77
+ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:30:27-74
+		ADDED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml:33:27-74
 uses-sdk
 INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml
@@ -221,12 +232,14 @@ MERGED from [com.google.maps.android:maps-ktx:5.0.0] /home/gift/.gradle/caches/8
 MERGED from [com.google.maps.android:maps-ktx:5.0.0] /home/gift/.gradle/caches/8.13/transforms/70961601fac588f0e440002dd618d456/transformed/maps-ktx-5.0.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /home/gift/.gradle/caches/8.13/transforms/33ca194ff0aeebc70d88675e8b76c378/transformed/play-services-maps-18.2.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /home/gift/.gradle/caches/8.13/transforms/33ca194ff0aeebc70d88675e8b76c378/transformed/play-services-maps-18.2.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/gift/.gradle/caches/8.13/transforms/3faa8a4fe05e8479ea35e5f097172c44/transformed/play-services-base-18.0.1/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/gift/.gradle/caches/8.13/transforms/3faa8a4fe05e8479ea35e5f097172c44/transformed/play-services-base-18.0.1/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /home/gift/.gradle/caches/8.13/transforms/d31398898a935a24fcc020118c523a08/transformed/play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /home/gift/.gradle/caches/8.13/transforms/d31398898a935a24fcc020118c523a08/transformed/play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:18.0.0] /home/gift/.gradle/caches/8.13/transforms/f88cd3bdd03b27601d1a4b079abde7f5/transformed/play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-basement:18.0.0] /home/gift/.gradle/caches/8.13/transforms/f88cd3bdd03b27601d1a4b079abde7f5/transformed/play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /home/gift/.gradle/caches/8.13/transforms/0361f19a4b3f0c2086c621e372463a55/transformed/play-services-location-21.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /home/gift/.gradle/caches/8.13/transforms/0361f19a4b3f0c2086c621e372463a55/transformed/play-services-location-21.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/gift/.gradle/caches/8.13/transforms/d4f1df45f580e7440d024cb8f0979e04/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/gift/.gradle/caches/8.13/transforms/d4f1df45f580e7440d024cb8f0979e04/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/gift/.gradle/caches/8.13/transforms/4220548ef6d76c0bda89335cca0cc530/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/gift/.gradle/caches/8.13/transforms/4220548ef6d76c0bda89335cca0cc530/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/gift/.gradle/caches/8.13/transforms/c2c5e49fdd51b74259e8235ecd54f8c3/transformed/play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/gift/.gradle/caches/8.13/transforms/c2c5e49fdd51b74259e8235ecd54f8c3/transformed/play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
 MERGED from [androidx.fragment:fragment:1.0.0] /home/gift/.gradle/caches/8.13/transforms/c53221d0fc2e3528c75f41663571319a/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] /home/gift/.gradle/caches/8.13/transforms/c53221d0fc2e3528c75f41663571319a/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/gift/.gradle/caches/8.13/transforms/54a1fd5e7343760f14196e76c585374d/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
@@ -404,19 +417,19 @@ ADDED from [com.google.android.gms:play-services-maps:18.2.0] /home/gift/.gradle
 	android:name
 		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /home/gift/.gradle/caches/8.13/transforms/33ca194ff0aeebc70d88675e8b76c378/transformed/play-services-maps-18.2.0/AndroidManifest.xml:40:13-50
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/gift/.gradle/caches/8.13/transforms/3faa8a4fe05e8479ea35e5f097172c44/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/gift/.gradle/caches/8.13/transforms/d4f1df45f580e7440d024cb8f0979e04/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/gift/.gradle/caches/8.13/transforms/3faa8a4fe05e8479ea35e5f097172c44/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/gift/.gradle/caches/8.13/transforms/d4f1df45f580e7440d024cb8f0979e04/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/gift/.gradle/caches/8.13/transforms/3faa8a4fe05e8479ea35e5f097172c44/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/gift/.gradle/caches/8.13/transforms/d4f1df45f580e7440d024cb8f0979e04/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/gift/.gradle/caches/8.13/transforms/3faa8a4fe05e8479ea35e5f097172c44/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/gift/.gradle/caches/8.13/transforms/d4f1df45f580e7440d024cb8f0979e04/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:18.0.0] /home/gift/.gradle/caches/8.13/transforms/f88cd3bdd03b27601d1a4b079abde7f5/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/gift/.gradle/caches/8.13/transforms/c2c5e49fdd51b74259e8235ecd54f8c3/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:18.0.0] /home/gift/.gradle/caches/8.13/transforms/f88cd3bdd03b27601d1a4b079abde7f5/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/gift/.gradle/caches/8.13/transforms/c2c5e49fdd51b74259e8235ecd54f8c3/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:18.0.0] /home/gift/.gradle/caches/8.13/transforms/f88cd3bdd03b27601d1a4b079abde7f5/transformed/play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/gift/.gradle/caches/8.13/transforms/c2c5e49fdd51b74259e8235ecd54f8c3/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
 activity#androidx.compose.ui.tooling.PreviewActivity
 ADDED from [androidx.compose.ui:ui-tooling-android:1.9.2] /home/gift/.gradle/caches/8.13/transforms/60ac01ccd0fc99b367bb1c2b0776ab4a/transformed/ui-tooling/AndroidManifest.xml:23:9-25:39
 	android:exported

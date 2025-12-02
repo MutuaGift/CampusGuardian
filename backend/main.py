@@ -1,13 +1,12 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from pymongo import MongoClient
-from bson import ObjectId  # <--- Critical Import for finding IDs
+from bson import ObjectId
 import datetime
 
 app = FastAPI()
 
 # --- DATABASE CONNECTION ---
-# Connect to MongoDB running on this machine
 client = MongoClient("mongodb://localhost:27017/")
 db = client["campus_guardian_db"]
 rides_collection = db["active_rides"]
@@ -16,68 +15,86 @@ rides_collection = db["active_rides"]
 class RideRequest(BaseModel):
     student_name: str
     pickup_location: str
+    pickup_lat: float
+    pickup_lng: float
     destination: str
+    travel_mode: str
+
+class SOSSignal(BaseModel):
+    lat: float
+    lng: float
 
 # --- ENDPOINTS ---
 
-# 1. Health Check
 @app.get("/")
 def read_root():
     return {"status": "Active", "message": "CampusGuardian Brain is Online"}
 
-# 2. Request a Ride (Create)
 @app.post("/request-ride")
 def create_ride(request: RideRequest):
-    # Create the document
     ride_data = {
         "student": request.student_name,
         "pickup": request.pickup_location,
+        "pickup_lat": request.pickup_lat,
+        "pickup_lng": request.pickup_lng,
         "destination": request.destination,
+        "travel_mode": request.travel_mode,
         "status": "PENDING",
         "timestamp": datetime.datetime.now()
     }
-    
-    # Save to MongoDB
     result = rides_collection.insert_one(ride_data)
-    
-    print(f"New Ride Saved! ID: {result.inserted_id}")
-    
-    return {
-        "status": "Success",
-        "ride_id": str(result.inserted_id),
-        "message": f"Ride saved! Waiting for drivers..."
-    }
+    print(f"New {request.travel_mode} Request from {request.student_name}")
+    return {"status": "Success", "ride_id": str(result.inserted_id), "message": "Request Sent!"}
 
-# 3. Get All Active Rides (Read)
+# THE UPDATED SOS ENDPOINT
+@app.post("/sos")
+def trigger_sos(signal: SOSSignal):
+    # We format this exactly like a normal ride so the dashboard can read it
+    alert_data = {
+        "student": "🚨 SOS ALERT 🚨",  # Special Name
+        "pickup": "EMERGENCY LOCATION",
+        "pickup_lat": signal.lat,
+        "pickup_lng": signal.lng,
+        "destination": "N/A",
+        "travel_mode": "SOS",
+        "status": "SOS_PENDING",       # Special Status
+        "timestamp": datetime.datetime.now()
+    }
+    
+    rides_collection.insert_one(alert_data)
+    print(f"!!! SOS RECEIVED !!! Lat: {signal.lat}, Lng: {signal.lng}")
+    return {"status": "Alert Sent", "message": "Security has been notified!"}
+
 @app.get("/active-rides")
 def get_rides():
-    # Fetch all documents
+    # Return everything so we see normal rides AND SOS alerts
     rides_cursor = rides_collection.find({})
-    
     clean_rides = []
     for ride in rides_cursor:
-        # Convert the weird Mongo ID to a normal String for JSON
         ride["_id"] = str(ride["_id"]) 
         clean_rides.append(ride)
-    
     return clean_rides
 
-# 4. Accept a Ride (Update)
 @app.put("/accept-ride/{ride_id}")
 def accept_ride(ride_id: str):
-    print(f"Attempting to accept ride: {ride_id}")
-    
     try:
-        # Find the ride by ID and change status to IN_PROGRESS
         result = rides_collection.update_one(
-            {"_id": ObjectId(ride_id)}, # Convert string ID to Mongo ID
+            {"_id": ObjectId(ride_id)}, 
             {"$set": {"status": "IN_PROGRESS"}}
         )
-        
         if result.modified_count == 1:
-            return {"status": "Success", "message": "Ride Accepted! Go pick them up."}
+            return {"status": "Success", "message": "Mission Accepted!"}
         else:
-            return {"status": "Error", "message": "Ride not found or already accepted"}
-            
+            return {"status": "Error", "message": "Ride not found"}
     except Exception as e:
         return {"status": "Error", "message": str(e)}
+
+@app.get("/rides/search")
+def search_rides(destination: str):
+    query = {"destination": {"$regex": destination, "$options": "i"}}
+    rides_cursor = rides_collection.find(query)
+    clean_rides = []
+    for ride in rides_cursor:
+        ride["_id"] = str(ride["_id"]) 
+        clean_rides.append(ride)
+    return clean_rides

@@ -7,9 +7,11 @@ import androidx.activity.compose.setContent
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.mutuagift.campusguardian.ui.DriverDashboard
 import com.mutuagift.campusguardian.ui.EditProfileScreen
 import com.mutuagift.campusguardian.ui.HomeScreen
 import com.mutuagift.campusguardian.ui.ProfileScreen
+import com.mutuagift.campusguardian.ui.RideRequestScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
