@@ -1,70 +1,70 @@
 [
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/drawable/ic_launcher_foreground.xml"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/xml_backup_rules.xml.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/xml_data_extraction_rules.xml.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/xml_backup_rules.xml.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/xml/backup_rules.xml"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/xml_data_extraction_rules.xml.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/xml/data_extraction_rules.xml"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/xml_network_security_config.xml.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/xml/network_security_config.xml"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/drawable/ic_launcher_background.xml"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/xml_network_security_config.xml.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/xml/network_security_config.xml"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.mutuagift.campusguardian.app-debug-48:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.mutuagift.campusguardian.app-main-50:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.mutuagift.campusguardian.app-debug-49:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.mutuagift.campusguardian.app-main-51:/mipmap-xxhdpi/ic_launcher.webp"
     }
 ]

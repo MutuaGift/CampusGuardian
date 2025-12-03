@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.mutuagift.campusguardian.app-mergeDebugResources-46:/values-ms/values-ms.xml",
+            "outputFile": "com.mutuagift.campusguardian.app-mergeDebugResources-47:/values-ms/values-ms.xml",
             "map": [
                 {
                     "source": "/home/gift/.gradle/caches/8.13/transforms/90c1df8dbaee76ed4245be0e714da592/transformed/material3-release/res/values-ms/values-ms.xml",

@@ -1,56 +1,59 @@
 package com.mutuagift.campusguardian
 
-// Import your UI screens from the 'ui' package
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+// IMPORTS FOR ARGUMENTS
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.mutuagift.campusguardian.ui.DriverDashboard
-import com.mutuagift.campusguardian.ui.EditProfileScreen
+import androidx.navigation.navArgument
+
+import com.mutuagift.campusguardian.ui.LoginScreen
+import com.mutuagift.campusguardian.ui.SignUpScreen
 import com.mutuagift.campusguardian.ui.HomeScreen
-import com.mutuagift.campusguardian.ui.ProfileScreen
 import com.mutuagift.campusguardian.ui.RideRequestScreen
+import com.mutuagift.campusguardian.ui.DriverDashboard
+import com.mutuagift.campusguardian.ui.MapScreen
+import com.mutuagift.campusguardian.ui.ProfileScreen
+import com.mutuagift.campusguardian.ui.EditProfileScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            // 1. Create the Controller
             val navController = rememberNavController()
 
-            // 2. Setup the Navigation Host
-            NavHost(navController = navController, startDestination = "home_screen") {
+            NavHost(navController = navController, startDestination = "login_screen") {
 
-                // Route A: Menu
-                composable("home_screen") {
-                    HomeScreen(navController)
-                }
+                composable("login_screen") { LoginScreen(navController) }
+                composable("signup_screen") { SignUpScreen(navController) }
+                composable("home_screen") { HomeScreen(navController) }
+                composable("passenger_screen") { RideRequestScreen() }
 
-                // Route B: Passenger Form
-                composable("passenger_screen") {
-                    RideRequestScreen()
-                }
+                // PASS NAV CONTROLLER TO DRIVER DASHBOARD
+                composable("driver_screen") { DriverDashboard(navController) }
 
-                // Route C: Driver Dashboard
-                composable("driver_screen") {
-                    DriverDashboard()
-                }
+                // PROFILE ROUTES
+                composable("profile_screen") { ProfileScreen(navController) }
+                composable("edit_profile_screen") { EditProfileScreen(navController) }
 
-                // Route D: Map Screen
-                composable("map_screen") {
-                    MapScreen()
-                }
+                // --- THE DYNAMIC MAP ROUTE ---
+                // It expects two numbers: lat and lng
+                composable(
+                    route = "map_screen/{lat}/{lng}",
+                    arguments = listOf(
+                        navArgument("lat") { type = NavType.FloatType },
+                        navArgument("lng") { type = NavType.FloatType }
+                    )
+                ) { backStackEntry ->
+                    // Extract the numbers
+                    val lat = backStackEntry.arguments?.getFloat("lat")?.toDouble() ?: 0.0470
+                    val lng = backStackEntry.arguments?.getFloat("lng")?.toDouble() ?: 37.6498
 
-                // Route E: Profile (FIXED)
-                composable("profile_screen") {
-                    ProfileScreen(navController)
-                }
-
-                // Route F: Edit Profile
-                composable("edit_profile_screen") {
-                    EditProfileScreen(navController)
+                    // Show map
+                    MapScreen(lat, lng)
                 }
             }
         }

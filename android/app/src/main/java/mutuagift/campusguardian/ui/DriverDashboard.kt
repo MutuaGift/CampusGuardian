@@ -18,6 +18,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController // <--- Needed for navigation
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -25,15 +26,17 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 @Composable
-fun DriverDashboard() {
+// 1. Accept the NavController here
+fun DriverDashboard(navController: NavController) {
     var ridesList by remember { mutableStateOf<List<Ride>>(emptyList()) }
     var statusText by remember { mutableStateOf("Loading rides...") }
     var searchQuery by remember { mutableStateOf("") }
     val context = LocalContext.current
 
+    // FETCH LOGIC
     fun fetchRides() {
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://192.168.1.107:8000/") // CHECK YOUR IP
+            .baseUrl("http://192.168.1.107:8000/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         val api = retrofit.create(ApiService::class.java)
@@ -43,10 +46,10 @@ fun DriverDashboard() {
         call.enqueue(object : Callback<List<Ride>> {
             override fun onResponse(call: Call<List<Ride>>, response: Response<List<Ride>>) {
                 if (response.isSuccessful) {
-                    // Put SOS alerts at the top of the list!
                     val allRides = response.body() ?: emptyList()
-                    ridesList = allRides.sortedByDescending { it.status == "SOS_PENDING" }
-                    statusText = "Found ${ridesList.size} active items"
+                    ridesList = allRides.filter { it.status != "COMPLETED" }
+                        .sortedByDescending { it.status == "SOS_PENDING" }
+                    statusText = "Found ${ridesList.size} active tasks"
                 }
             }
             override fun onFailure(call: Call<List<Ride>>, t: Throwable) {
@@ -55,6 +58,7 @@ fun DriverDashboard() {
         })
     }
 
+    // ACCEPT LOGIC
     fun acceptRide(rideId: String) {
         val retrofit = Retrofit.Builder()
             .baseUrl("http://192.168.1.107:8000/")
@@ -65,7 +69,28 @@ fun DriverDashboard() {
         api.acceptRide(rideId).enqueue(object : Callback<BackendResponse> {
             override fun onResponse(call: Call<BackendResponse>, response: Response<BackendResponse>) {
                 if (response.isSuccessful) {
-                    Toast.makeText(context, "Accepted!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Ride Started!", Toast.LENGTH_SHORT).show()
+                    fetchRides()
+                }
+            }
+            override fun onFailure(call: Call<BackendResponse>, t: Throwable) {
+                Toast.makeText(context, "Failed: ${t.message}", Toast.LENGTH_SHORT).show()
+            }
+        })
+    }
+
+    // COMPLETE LOGIC
+    fun completeRide(rideId: String) {
+        val retrofit = Retrofit.Builder()
+            .baseUrl("http://192.168.1.107:8000/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+        val api = retrofit.create(ApiService::class.java)
+
+        api.completeRide(rideId).enqueue(object : Callback<BackendResponse> {
+            override fun onResponse(call: Call<BackendResponse>, response: Response<BackendResponse>) {
+                if (response.isSuccessful) {
+                    Toast.makeText(context, "Ride Finished!", Toast.LENGTH_SHORT).show()
                     fetchRides()
                 }
             }
@@ -98,22 +123,33 @@ fun DriverDashboard() {
 
         LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
             items(ridesList) { ride ->
-                RideCard(ride, onAcceptClick = { acceptRide(ride._id) })
+                RideCard(
+                    ride = ride,
+                    onAcceptClick = { acceptRide(ride._id) },
+                    onCompleteClick = { completeRide(ride._id) },
+                    // 2. NAVIGATE TO MAP with coordinates
+                    onMapClick = {
+                        navController.navigate("map_screen/${ride.pickup_lat}/${ride.pickup_lng}")
+                    }
+                )
             }
         }
     }
 }
 
 @Composable
-fun RideCard(ride: Ride, onAcceptClick: () -> Unit) {
-    // 1. Determine Colors based on Status
+fun RideCard(
+    ride: Ride,
+    onAcceptClick: () -> Unit,
+    onCompleteClick: () -> Unit,
+    onMapClick: () -> Unit // <--- New Callback
+) {
     val cardColor = when(ride.status) {
-        "IN_PROGRESS" -> Color(0xFFE8F5E9) // Green (Safe)
-        "SOS_PENDING" -> Color(0xFFFFEBEE) // Red (Danger!)
+        "IN_PROGRESS" -> Color(0xFFE8F5E9)
+        "SOS_PENDING" -> Color(0xFFFFEBEE)
         else -> Color.White
     }
 
-    // Add a Red Border if it's an SOS
     val borderStroke = if (ride.status == "SOS_PENDING") BorderStroke(2.dp, Color.Red) else null
 
     Card(
@@ -124,7 +160,6 @@ fun RideCard(ride: Ride, onAcceptClick: () -> Unit) {
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
 
-            // 2. Special Header for SOS
             if (ride.status == "SOS_PENDING") {
                 Text(text = "⚠️ EMERGENCY ALERT", color = Color.Red, fontWeight = FontWeight.Bold)
                 Spacer(modifier = Modifier.height(4.dp))
@@ -132,15 +167,33 @@ fun RideCard(ride: Ride, onAcceptClick: () -> Unit) {
 
             Text(text = ride.student, fontWeight = FontWeight.Bold, fontSize = 18.sp)
 
+            val modeIcon = when(ride.travel_mode) {
+                "WALK" -> "🚶 WALKING BUDDY"
+                "BODA" -> "🏍️ BODABODA"
+                "SOS" -> "🚨 EMERGENCY"
+                else -> "🚗 CAR RIDE"
+            }
+            Text(text = "Mode: $modeIcon", color = Color.DarkGray, fontSize = 14.sp)
+
             if (ride.status == "SOS_PENDING") {
-                Text(text = "Location Coordinates: ${ride.pickup}")
+                Text(text = "Loc: ${ride.pickup_lat}, ${ride.pickup_lng}")
             } else {
                 Text(text = "From: ${ride.pickup} -> To: ${ride.destination}")
             }
 
             Spacer(modifier = Modifier.height(8.dp))
 
-            // 3. Button Logic
+            // 3. SHOW MAP BUTTON (Only if coordinates exist)
+            if (ride.pickup_lat != 0.0) {
+                OutlinedButton(
+                    onClick = onMapClick,
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Text("🗺️ VIEW ON MAP")
+                }
+                Spacer(modifier = Modifier.height(8.dp))
+            }
+
             when (ride.status) {
                 "PENDING" -> {
                     Button(
@@ -156,8 +209,12 @@ fun RideCard(ride: Ride, onAcceptClick: () -> Unit) {
                         modifier = Modifier.fillMaxWidth()
                     ) { Text("RESPOND TO SOS") }
                 }
-                else -> {
-                    Text(text = "✅ IN PROGRESS", color = Color(0xFF2E7D32), fontWeight = FontWeight.Bold)
+                "IN_PROGRESS" -> {
+                    Button(
+                        onClick = onCompleteClick,
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2E7D32)),
+                        modifier = Modifier.fillMaxWidth()
+                    ) { Text("🏁 COMPLETE RIDE") }
                 }
             }
         }

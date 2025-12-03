@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.mutuagift.campusguardian.app-mergeDebugResources-46:/values-pa/values-pa.xml",
+            "outputFile": "com.mutuagift.campusguardian.app-mergeDebugResources-47:/values-pa/values-pa.xml",
             "map": [
                 {
                     "source": "/home/gift/.gradle/caches/8.13/transforms/d4f1df45f580e7440d024cb8f0979e04/transformed/play-services-base-18.1.0/res/values-pa/values.xml",

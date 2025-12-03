@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="about">Über</string>
+    <string name="about_message">Diese Software benutzt Kartenmaterial von OpenStreetMap.org</string>
     <string msgid="389117264260014992" name="autofill">"Automatisch ausfüllen"</string>
+    <string name="base">OSM Basislayer</string>
     <string msgid="881409763997275156" name="call_notification_answer_action">"Annehmen"</string>
     <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
     <string msgid="3229508546291798546" name="call_notification_decline_action">"Ablehnen"</string>
@@ -28,9 +31,11 @@
     <string name="common_open_on_phone">Auf Smartphone öffnen</string>
     <string name="common_signin_button_text">Anmelden</string>
     <string name="common_signin_button_text_long">Über Google anmelden</string>
+    <string name="cyclemap">Fahrradkarte</string>
     <string msgid="8038256446254964252" name="default_error_message">"Ungültige Eingabe"</string>
     <string msgid="6312721426453364202" name="default_popup_window_title">"Pop-up-Fenster"</string>
     <string msgid="1890207353314751437" name="dropdown_menu">"Drop-down-Menü"</string>
+    <string name="hills">Relief</string>
     <string msgid="6827826412747255547" name="in_progress">"In Bearbeitung"</string>
     <string msgid="7933458017204019916" name="indeterminate">"Teilweise aktiviert"</string>
     <string msgid="2988463736136100848" name="m3c_bottom_sheet_collapse_description">"Ansicht am unteren Rand minimieren"</string>
@@ -90,6 +95,8 @@
     <string msgid="6616362054113087709" name="m3c_time_picker_pm">"Nachmittags"</string>
     <string msgid="1805687647081129904" name="m3c_tooltip_long_press_label">"Kurzinfo anzeigen"</string>
     <string msgid="5460405025248574620" name="m3c_tooltip_pane_description">"Kurzinfo"</string>
+    <string name="map_mode">Kartenmodus</string>
+    <string name="my_location">Standort</string>
     <string msgid="542007171693138492" name="navigation_menu">"Navigationsmenü"</string>
     <string msgid="6610465462668679431" name="not_selected">"Nicht ausgewählt"</string>
     <string msgid="5941395253238309765" name="range_end">"Bereichsende"</string>
@@ -105,4 +112,6 @@
     <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> Prozent."</string>
     <string msgid="3765533235322692011" name="tooltip_description">"Kurzinfo"</string>
     <string msgid="3124740595719787496" name="tooltip_label">"Kurzinfo anzeigen"</string>
+    <string name="topo">Topographisch</string>
+    <string name="unknown">Unbekannt</string>
 </resources>

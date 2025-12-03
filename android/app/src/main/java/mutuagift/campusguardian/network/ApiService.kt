@@ -34,4 +34,8 @@ interface ApiService {
     // 6. SOS BUTTON
     @POST("/sos")
     fun sendSOS(@Body signal: SOSSignal): Call<BackendResponse>
+
+    // 6. Complete a Ride
+    @PUT("/complete-ride/{id}")
+    fun completeRide(@Path("id") rideId: String): Call<BackendResponse>
 }

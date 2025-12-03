@@ -103,6 +103,7 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/g
 MERGED from [androidx.print:print:1.0.0] /home/gift/.gradle/caches/8.13/transforms/43f40295e8984d2ce85c08db9cff01bd/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/gift/.gradle/caches/8.13/transforms/75350f484734c5a5426f1075b79e188b/transformed/exifinterface-1.3.6/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/gift/.gradle/caches/8.13/transforms/3d6a7b519aed11fc5817e85aeaaadc05/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:2:1-27:12
 	package
 		INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -388,6 +389,8 @@ MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/gift/.gradle/cach
 MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/gift/.gradle/caches/8.13/transforms/75350f484734c5a5426f1075b79e188b/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/gift/.gradle/caches/8.13/transforms/3d6a7b519aed11fc5817e85aeaaadc05/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/gift/.gradle/caches/8.13/transforms/3d6a7b519aed11fc5817e85aeaaadc05/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:5:5-7:41
+MERGED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:5:5-7:41
 	android:targetSdkVersion
 		INJECTED from /home/gift/CampusGuardian/android/app/src/main/AndroidManifest.xml
 	tools:ignore
@@ -534,3 +537,35 @@ action#androidx.profileinstaller.action.BENCHMARK_OPERATION
 ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/gift/.gradle/caches/8.13/transforms/c02b9387e63156b41291297d21e25f8a/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
 	android:name
 		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/gift/.gradle/caches/8.13/transforms/c02b9387e63156b41291297d21e25f8a/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+supports-screens
+ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:9:5-12:40
+	android:largeScreens
+		ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:11:9-36
+	android:normalScreens
+		ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:12:9-37
+	android:anyDensity
+		ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:10:9-34
+uses-feature#android.hardware.location.network
+ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:15:9-57
+uses-feature#android.hardware.location.gps
+ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:17:5-19:36
+	android:required
+		ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:19:9-33
+	android:name
+		ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:18:9-53
+uses-feature#android.hardware.telephony
+ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:20:5-22:36
+	android:required
+		ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:22:9-33
+	android:name
+		ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:21:9-50
+uses-feature#android.hardware.wifi
+ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:23:5-25:36
+	android:required
+		ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:25:9-33
+	android:name
+		ADDED from [org.osmdroid:osmdroid-android:6.1.16] /home/gift/.gradle/caches/8.13/transforms/66b95a8cca6faff60a4e07c9027f69db/transformed/osmdroid-android-6.1.16/AndroidManifest.xml:24:9-45
